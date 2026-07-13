@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu</title>
+
+<!-- Bootstrap 5.3.3 CSS via CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap Icons CDN (For the hamburger toggle or branding accents) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+<style>
+/* =========================================================================
+1. CUSTOM THEME DESIGN OVERRIDES (Nordic Slate Palette)
+========================================================================= */
+body {
+background-color: #f8fafc; /* Soft Ice background */
+color: #1e293b; /* Deep Slate text color */
+}
+
+/* Responsive Custom Navbar Style Mapping */
+.custom-navbar {
+background-color: rgb(197, 18, 54) !important; /* Deep Slate Base */
+}
+
+.custom-navbar .navbar-brand {
+color: #ffffff !important; /* Mint Green Brand text */
+font-weight: 700;
+}
+.custom-navbar .nav-link {
+color: #f8fafc !important;
+font-weight: 700; /* Bold */
+transition: color 0.2s ease-in-out;
+}
+
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link.active {
+color: #ffffff !important; /* Mint Green Hover Highlight */
+}
+
+/* Custom Header Styling Rules */
+.custom-nordic-header {
+background-color: rgb(177, 9, 43) !important;
+color: #f8fafc !important;
+}
+
+.section-title{
+width:90%;
+max-width:1200px;
+margin:50px auto 30px;
+padding:15px;
+text-align:center;
+font-family:Georgia,serif;
+font-size:34px;
+letter-spacing:4px;
+color:#fff;
+
+background:linear-gradient(135deg,
+rgb(177, 9, 43),
+rgb(220, 20, 60),
+rgb(150, 0, 35)
+);
+
+border-radius:15px;
+box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+.menu-container {
+
+width: 90%;
+max-width: 1200px;
+margin: 40px auto;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 30px;
+
+}
+
+.menu-card {
+
+background: #fff;
+border-radius: 15px;
+overflow: hidden;
+box-shadow: 0 5px 15px rgba(0, 0, 0, .15);
+transition: .3s;
+
+}
+
+.menu-card:hover {
+transform: translateY(-8px);
+
+}
+
+.menu-card img {
+
+width: 100%;
+height: auto;
+object-fit: cover;
+
+}
+
+.menu-card h3 {
+
+margin: 15px;
+color:#5c3c00;
+font-weight: 700;
+text-align: center;
+
+}
+
+.menu-card p {
+
+margin: 0 15px 20px;
+font-weight: bold;
+color: #555;
+
+}
+
+@media(max-width:768px) {
+
+.menu-container {
+grid-template-columns: 1fr;
+
+}
+
+}
+.footer{
+    width: 100%;
+    background-color: rgb(177, 9, 43);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+
+</style>
+</head>
+<body>
+
+<!-- =========================================================================
+2. RESPONSIVE NAVIGATION BAR COMPONENT
+========================================================================= -->
+<nav class="navbar navbar-expand-md navbar-dark custom-navbar shadow-sm sticky-top mb-4">
+<div class="container">
+<!-- Brand/Logo Link Header -->
+<a class="navbar-brand" href="#">
+</i>Dolce Vita Pasticceria
+</a>
+
+<!-- Mobile Toggle Button (Hamburger Menu) -->
+<button class="navbar-toggler border-0" type="button"
+data-bs-toggle="collapse"
+data-bs-target="#mainDepartmentNavbar"
+aria-controls="mainDepartmentNavbar"
+aria-expanded="false"
+aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<!-- Collapsible Navbar Content Container Box Component -->
+<div class="collapse navbar-collapse" id="mainDepartmentNavbar">
+<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+<li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="about us.html">About Us</a></li>
+<li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+<li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<h1 class="section-title">OUR MENU</h1>
+
+<section class="menu-container">
+
+<div class="menu-card">
+<img src="ube.png" alt="ube">
+<h3>UBE BLOOM CAKE</h3>
+<p>₱850</p>
+</div>
+
+<div class="menu-card">
+<img src="tiramisu.png" alt="tiramisu">
+<h3>TIRAMISU CAKE</h3>
+<p>₱820</p>
+</div>
+
+<div class="menu-card">
+<img src="round.png" alt="cake">
+<h3>ROUND CARAMEL DEDICATION CAKE</h3>
+<p>₱900</p>
+</div>
+
+<div class="menu-card">
+<img src="round.png" alt="caramel">
+<h3>ROUND SUPREME CHOCOLATE-CARAMEL DEDICATION CAKE</h3>
+<p>₱950</p>
+</div>
+
+<div class="menu-card">
+<img src="black forest.png" alt="choco">
+<h3>BLACK FOREST CAKE</h3>
+<p>₱577</p>
+</div>
+
+<div class="menu-card">
+<img src="Chocolate Bliss.png" alt="choco">
+<h3>CHOCOLATE BLISS CAKE</h3>
+<p>₱499</p>
+</div>
+
+<div class="menu-card">
+<img src="Chocolate Mousse Regular.png" alt="choco">
+<h3>CHOCOLATE MOUSSE CAKE </h3>
+<p>₱550</p>
+</div>
+
+<div class="menu-card">
+<img src="Mango Blossom Cake.png" alt="choco">
+<h3>MANGO BLOSSOM CAKE</h3>
+<p>₱720</p>
+</div>
+
+<div class="menu-card">
+<img src="chino.png" alt="choco">
+<h3>CHOCO-PEANUT BUTTER CAKE SLICE</h3>
+<p>₱1,590</p>
+</div>
+
+<div class="menu-card">
+<img src="rainbow.png" alt="choco">
+<h3>ROUND RAINBOW DEDICATION CAKE</h3>
+<p>₱945</p>
+</div>
+
+<div class="menu-card">
+<img src="Rainbow Dedication Cake.png" alt="choco">
+<h3>RAINBOW DEDICATION CAKE</h3>
+<p>₱920</p>
+</div>
+
+<div class="menu-card">
+<img src="chocolate roll.png" alt="choco">
+<h3>TRIPLE CHOCOLATE ROLL</h3>
+<p>₱540</p>
+</div>
+
+<div class="menu-card">
+<img src="mango roll.png" alt="choco">
+<h3>MANGO ROLL </h3>
+<p>₱540</p>
+</div>
+
+<div class="menu-card">
+<img src="mocha.png" alt="choco">
+<h3>MOCHA ROLL</h3>
+<p>₱540</p>
+</div>
+
+<div class="menu-card">
+<img src="brazo de mercedes.png" alt="choco">
+<h3>BRAZO DE MERCEDES ROLL</h3>
+<p>₱575</p>
+</div>
+
+<div class="menu-card">
+<img src="Milky Caramel Roll.png" alt="choco">
+<h3>MILKY CARAMEL ROLL</h3>
+<p>₱380</p>
+</div>
+
+<div class="menu-card">
+<img src="Red Velvet Cake Slice.png" alt="choco">
+<h3>RED VELVET CAKE SLICE</h3>
+<p>₱45</p>
+</div>
+
+<div class="menu-card">
+<img src="Choco Cake Slice.png" alt="choco">
+<h3>CHOCO CAKE SLICE</h3>
+<p>₱45</p>
+</div>
+
+<div class="menu-card">
+<img src="Double Dutch Cake Slice.png" alt="choco">
+<h3>DOUBLE DUTCH CAKE SLICE</h3>
+<p>₱45</p>
+</div>
+
+<div class="menu-card">
+<img src="Chiffon Cake Slice.png" alt="choco">
+<h3>CHIFFON CAKE SLICE</h3>
+<p>₱45</p>
+</div>
+
+<div class="menu-card">
+<img src="Ube Marble Cake Slice.png" alt="choco">
+<h3>UBE MARBLE CAKE SLICE</h3>
+<p>₱45</p>
+</div>
+
+<div class="menu-card">
+<img src="Mocha Marble Cake Slice.png" alt="choco">
+<h3>MOCHA MARBLE CAKE SLICE</h3>
+<p>₱45</p>
+</div>
+
+<div class="menu-card">
+<img src="Choco Cake Slice.png" alt="choco">
+<h3>CHOCOLATE-PEANUT BUTTER CAKE SLICE</h3>
+<p>₱45</p>
+</div>
+
+<div class="menu-card">
+<img src="strawberry.png" alt="choco">
+<h3>STRAWBERYY CAKE SLICE</h3>
+<p>₱45</p>
+</div>
+
+<div class="menu-card">
+<img src="Rum Cake.png" alt="choco">
+<h3>RUM CAKE</h3>
+<p>₱2,248</p>
+</div>
+
+<div class="menu-card">
+<img src="bacao cake.png" alt="choco">
+<h3>BACAO CAKE</h3>
+<p>₱2,810</p>
+</div>
+
+<div class="menu-card">
+<img src="mousse.png" alt="choco">
+<h3>DOUBLE CHOCOLATE MOUSSE CAKE</h3>
+<p>₱2,622</p>
+</div>
+
+<div class="menu-card">
+<img src="pistachio.png" alt="choco">
+<h3>PISTACHIO MOUSSE CAKE</h3>
+<p>₱2,810</p>
+</div>
+
+<div class="menu-card">
+<img src="tropicana.png" alt="choco">
+<h3>TROPICANA CAKE</h3>
+<p>₱2,622</p>
+</div>
+
+<div class="menu-card">
+<img src="lemon.png" alt="choco">
+<h3>LEMON TARTUFO CAKE</h3>
+<p>₱2,700</p>
+</div>
+
+<div class="menu-card">
+<img src="dubai.png" alt="choco">
+<h3>Dubai Chocolate Cake</h3>
+<p>₱3,800</p>
+</div>
+
+<div class="menu-card">
+<img src="cheesecake.png" alt="choco">
+<h3>Strawberry Cheesecake</h3>
+<p>₱1,800</p>
+</div>
+
+<div class="menu-card">
+<img src="matcha.png" alt="choco">
+<h3>Matcha Cake</h3>
+<p>₱3,200</p>
+</div>
+
+<div class="menu-card">
+<img src="blueberry.png" alt="choco">
+<h3>Blueberry Cheesecake</h3>
+<p>₱1,300</p>
+</div>
+
+<div class="menu-card">
+<img src="red.png" alt="choco">
+<h3>Red Velvet Cake</h3>
+<p>₱1,300</p>
+</div>
+
+<div class="menu-card">
+<img src="DeHazelnutPraline.png" alt="choco">
+<h3>Hazelnut Praline Cake</h3>
+<p>₱2,000</p>
+</div>
+
+<div class="menu-card">
+<img src="Lotus_Biscoff.png" alt="choco">
+<h3>Lotus Biscoff Cheesecake</h3>
+<p>₱1,300</p>
+</div>
+
+<div class="menu-card">
+<img src="mascarpone.png" alt="choco">
+<h3>Chocolate Mascarpone Cake</h3>
+<p>₱1,800</p>
+</div>
+
+<div class="menu-card">
+<img src="trifecta.png" alt="choco">
+<h3>Cheesecake Trifecta Cake</h3>
+<p>₱2,500</p>
+</div>
+
+<div class="menu-card">
+<img src="mixed.png" alt="choco">
+<h3>Gourmet Mixed</h3>
+<p>₱3,000</p>
+</div>
+
+<div class="menu-card">
+<img src="vanilla.png" alt="choco">
+<h3>Strawberry Vanilla Symphony Cake</h3>
+<p>₱1,050</p>
+</div>
+
+<div class="menu-card">
+<img src="nouvea.png" alt="choco">
+<h3>Chocolate Nouveau Cake</h3>
+<p>₱1,450</p>
+</div>
+
+<div class="menu-card">
+<img src="triple.png" alt="choco">
+<h3>Triple Chocolate Cake</h3>
+<p>₱2,000</p>
+</div>
+
+<div class="menu-card">
+<img src="bravo.jpg" alt="choco">
+<h3>Mango Reverie Cake (Mango Bravo)</h3>
+<p>₱2,350</p>
+</div>
+
+<div class="menu-card">
+<img src="rival.png" alt="choco">
+<h3>Sans Rival Cake</h3>
+<p>₱1,935</p>
+</div>
+</section>
+
+<footer class="footer">
+    <h5>Dolce Vita Pasticceria</h5>
+    <p>The Best Tasting. Simply Irresistible!</p>
+        <p>
+        📍  Makati City, Philippines <br>
+        📞 +63 912 345 9786 <br>
+        ✉️ dolcevita@gmail.com
+    </p>
+    <small>&copy; 2026 Dolce Vita Pasticceria. All Rights Reserved.</small>
+</footer>
+
+
+<!-- Bootstrap 5 JavaScript Bundle via CDN -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
