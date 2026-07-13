@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home </title>
+
+<!-- Bootstrap 5.3.3 CSS via CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap Icons CDN (For the hamburger toggle or branding accents) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+<style>
+/* =========================================================================
+1. CUSTOM THEME DESIGN OVERRIDES (Nordic Slate Palette)
+========================================================================= */
+body {
+background-color: #f8fafc; /* Soft Ice background */
+color: #1e293b; /* Deep Slate text color */
+}
+
+/* Responsive Custom Navbar Style Mapping */
+.custom-navbar {
+background-color: rgb(197, 18, 54) !important; /* Deep Slate Base */
+}
+
+.custom-navbar .navbar-brand {
+color: #ffffff !important; /* Mint Green Brand text */
+font-weight: 700;
+}
+.custom-navbar .nav-link {
+color: #f8fafc !important;
+font-weight: 700; /* Bold */
+transition: color 0.2s ease-in-out;
+}
+
+
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link.active {
+color: #ffffff !important; /* Mint Green Hover Highlight */
+}
+
+/* Custom Header Styling Rules */
+.custom-nordic-header {
+background-color: rgb(177, 9, 43) !important;
+color: #f8fafc !important;
+}
+
+.custom-nordic-header h1 {
+color: #f5f5f5 !important;
+}
+
+.custom-sidebar-accent {
+border-top: 4px solid #10b981 !important;
+}
+
+/* Style overrides for the raw code blocks */
+code {
+color: #10b981 !important;
+font-weight: 600;
+background-color: #f1f5f9;
+padding: 2px 6px;
+border-radius: 4px;
+}
+
+
+
+.facility-container{
+width:100%;
+max-width:1200px;
+margin:0 auto 50px;
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:25px;
+}
+
+.facility-card{
+background:#fff;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,.10);
+transition:.3s;
+}
+
+.facility-card:hover{
+transform:translateY(-5px);
+box-shadow:0 18px 35px rgba(0,0,0,.18);
+}
+
+.facility-card{
+overflow: hidden;
+}
+
+.facility-card img{
+width: 100%;
+height: auto;
+object-fit: cover;
+object-position: center;
+display: block;
+}
+
+.facility-card h2{
+text-align:center;
+color:#5c3c00;
+padding:18px;
+font-family:sans-serif;
+font-size:22px;
+letter-spacing: 2px;
+font-weight:600;
+}
+
+body{
+    margin: 0;
+}
+
+.footer{
+    width: 100%;
+    background-color: rgb(177, 9, 43);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+</style>
+</head>
+<body>
+
+<!-- =========================================================================
+2. RESPONSIVE NAVIGATION BAR COMPONENT
+========================================================================= -->
+<nav class="navbar navbar-expand-md navbar-dark custom-navbar shadow-sm sticky-top mb-4">
+<div class="container">
+<!-- Brand/Logo Link Header -->
+<a class="navbar-brand" href="#">
+</i>Dolce Vita Pasticceria
+</a>
+
+<!-- Mobile Toggle Button (Hamburger Menu) -->
+<button class="navbar-toggler border-0" type="button"
+data-bs-toggle="collapse"
+data-bs-target="#mainDepartmentNavbar"
+aria-controls="mainDepartmentNavbar"
+aria-expanded="false"
+aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<!-- Collapsible Navbar Content Container Box Component -->
+<div class="collapse navbar-collapse" id="mainDepartmentNavbar">
+<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+<li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="about us.html">About Us</a></li>
+<li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+<li class="nav-item"><a class="nav-link" href="Login.html">Login</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+
+<!-- =========================================================================
+3. MAIN STRUCTURAL GRID CONTENT
+========================================================================= -->
+<div class="container">
+
+<!-- Header Block Component Layout -->
+<div class="custom-nordic-header text-center text-md-start p-4 p-md-5 rounded-3 mb-4 shadow-sm">
+<h1 class="fw-bold mb-2">Dolce Vita Pasticceria</h1>
+<p class="lead mb-0" style="font-style: italic;">The best Tasting. Simply Irresistible! Every single bite delivers a rich, unforgettable flavor that brings pure joy to your table, making it the perfect centerpiece for every family celebration.</p>
+</div>
+
+
+<h3 style="color: rgb(197, 18, 54); font-weight: bold;">What's New</h3>
+<p class="card-text text-secondary mb-4">
+Order now on Dolce Vita Pasticceria.ph
+
+<div class="facility-container">
+
+<section class="facility-card">
+<img src="ube.png" alt="Cake">
+<h2>UBE BLOOM CAKE</h2>
+</section>
+
+
+
+<section class="facility-card">
+<img src="tiramisu.png" alt="tiramisu cake">
+<h2>TIRAMISU CAKE</h2>
+</section>
+
+
+
+<section class="facility-card">
+<img src="round.png" alt="Cake">
+<h2>ROUND SUPREME CHOCOLATE-CARAMEL DEDICATION CAKE</h2>
+</section>
+
+
+
+<section div class="facility-card">
+<img src="caramel.png" alt="Round Caramel">
+<h2>ROUND CARAMEL DEDICATION CAKE</h2>
+</section>
+
+
+<section div class="facility-card">
+<img src="strawberry.png" alt="strawberry">
+<h2>STRAWBERRY CAKE SLICE</h2>
+</section>
+
+
+
+<section div class="facility-card">
+<img src="choco.png" alt="Chocolate peanut">
+<h2>CHOCO-PEANUT BUTTER CAKE SLICE</h2>
+</section>
+
+</div>
+</div>
+
+<footer class="footer">
+    <h5>Dolce Vita Pasticceria</h5>
+   <p>The Best Tasting. Simply Irresistible!</p>
+        <p>
+        📍  Makati City, Philippines <br>
+        📞 +63 912 345 9786 <br>
+        ✉️ dolcevita@gmail.com
+    </p>
+
+    <small>&copy; 2026 Dolce Vita Pasticceria. All Rights Reserved.</small>
+</footer>
+
+<!-- Bootstrap 5 JavaScript Bundle via CDN -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
